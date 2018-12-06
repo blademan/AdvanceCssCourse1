@@ -19,6 +19,17 @@
        text-align: center;
        cursor: pointer;
 
+       @include respond(tab-port) {
+        top: 3.5rem;
+        right: 3.5rem;
+       }
+       
+       @include respond(phone) {
+        top: 2.5rem;
+        right: 2.5rem;
+       }
+
+
 
 
    }
@@ -33,6 +44,17 @@
        background-image: radial-gradient($color-green, $color-green-dark);
        z-index: 1000;
        transition: transform 1s;
+
+       @include respond(tab-port) {
+        top: 4rem;
+        right: 4rem;
+       }
+       
+       @include respond(phone) {
+        top: 3rem;
+        right: 3rem;
+       }
+
 
       // transform: scale(85);
 
@@ -50,7 +72,8 @@
 
        opacity: 0;
        width: 0;
-       transition: all 1s;
+       transition: all .8s;
+       backface-visibility: hidden;
 
 
    }
