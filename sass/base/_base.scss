@@ -6,30 +6,7 @@
   box-sizing: inherit; }
 
 html {
-  font-size: 62.5%;
-
-
-  @include respond(tab-land){ //<900
-    font-size: 56.25%;
-  }
-  @include respond(tab-port){  //<600
-    font-size: 50%;   // 1rem =9px
-  }
-  // @include respond(phone){  //<600
-  // font-size: 30%;   // 1rem =9px
-  // }
-  @include respond(big-desktop){
-    font-size: 75%;
-  }
-  
-  
-
-  
- 
-}
-
-    
-  
+  font-size: 62.5%; }
 
 body {
   font-family: "Lato", sans-serif;
@@ -39,7 +16,4 @@ body {
   color: $color-grey;
   padding: 3rem;
   box-sizing: border-box;
-  @include respond(tab-port){  //<600
-    padding: 0;   // 1rem =9px
-  }
    }
