@@ -33,6 +33,13 @@
         overflow: hidden;
         opacity: 0;
         transition: all .4s .2s;
+        @include respond (tab-land) {
+            width: 80%;
+        }
+       
+        @include respond (tab-port) {
+            width: 90%;
+        }
        
 
     }
